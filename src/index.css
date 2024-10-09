@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .nav-text {
+    @apply font-bold text-lg hover:text-buttonColor hover:cursor-pointer;
+  }
+}
