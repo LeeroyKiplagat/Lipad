@@ -120,7 +120,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div ref={imageRef} className="mt-8 pl-56">
+      <div ref={imageRef} className="mt-8 md:pl-56">
         {activeTab === "bank" ? (
           <img
             src="/images/hero_bank.png"

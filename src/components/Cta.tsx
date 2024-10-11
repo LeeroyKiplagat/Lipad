@@ -49,7 +49,7 @@ const Cta = () => {
               <img
                 src={logo.src}
                 alt={logo.alt}
-                className="size-36 mx-auto transition-transform duration-500"
+                className="size-20 md:size-32 transition-transform duration-500"
               />
             </div>
           ))}

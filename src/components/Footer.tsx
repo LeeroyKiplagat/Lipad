@@ -1,19 +1,20 @@
 import { FaLinkedin, FaFacebookF, FaTwitter } from "react-icons/fa";
 import Logo from "../assets/logo2.png";
+
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-[#363f66]  to-[#25a759] text-white py-12 rounded-2xl mb-10">
-      <div className="container mx-auto px-8">
+    <footer className="bg-gradient-to-r from-[#363f66] to-[#25a759] text-white py-12 rounded-2xl mb-10">
+      <div className="container mx-auto px-4 sm:px-8">
         {/* Call to action */}
-        <div className="flex justify-between items-center mb-10">
-          <h2 className="text-3xl font-bold">
+        <div className="flex flex-col sm:flex-row justify-between items-center mb-10 text-center sm:text-left">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-0">
             I’m interested to simplify <br /> my business today!
           </h2>
           <form className="flex items-center">
             <input
               type="email"
               placeholder="Enter your email"
-              className="px-4 py-2 rounded-l-md w-72 text-black"
+              className="px-4 py-2 rounded-l-md w-full sm:w-72 text-black"
             />
             <button className="bg-orange-500 text-white px-6 py-2 rounded-r-md">
               Submit Now
@@ -21,9 +22,9 @@ const Footer = () => {
           </form>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 border-t pt-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 border-t pt-8">
           <div>
-            <img src={Logo} alt="Lipad Logo" className="w-32" />{" "}
+            <img src={Logo} alt="Lipad Logo" className="w-32 mx-auto sm:mx-0" />
           </div>
           <div className="space-y-4">
             <p>Our Location</p>
@@ -70,37 +71,31 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-10 flex justify-between items-center border-t  pt-6">
+        <div className="mt-10 flex flex-col sm:flex-row justify-between items-center border-t pt-6 text-center sm:text-left">
           <p>© 2024 All rights reserved</p>
-          <div className="flex space-x-6">
+          <div className="mt-4 sm:mt-0 flex space-x-6 justify-center">
             <a href="#">Terms</a>
             <a href="#">Privacy</a>
             <a href="#">Cookies</a>
           </div>
-          <div className="flex space-x-4">
+          <div className="mt-4 sm:mt-0 flex space-x-4 justify-center">
             <a
               href="#"
               className="text-white p-2 border-2 border-white rounded-full"
             >
-              <i className="fab fa-linkedin-in size-4">
-                <FaLinkedin />
-              </i>
+              <FaLinkedin />
             </a>
             <a
               href="#"
               className="text-white p-2 border-2 border-white rounded-full"
             >
-              <i className="fab fa-facebook-f">
-                <FaFacebookF />
-              </i>
+              <FaFacebookF />
             </a>
             <a
               href="#"
               className="text-white p-2 border-2 border-white rounded-full"
             >
-              <i className="">
-                <FaTwitter />
-              </i>
+              <FaTwitter />
             </a>
           </div>
         </div>
