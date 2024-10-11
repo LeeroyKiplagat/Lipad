@@ -18,6 +18,9 @@ export default {
       animation: {
         slide: "slide 15s linear infinite",
       },
+      fontFamily: {
+        livvic: ['"Livvic"', "sans-serif"],
+      },
     },
   },
   variants: {

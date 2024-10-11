@@ -13,7 +13,7 @@ const HeroSection = () => {
       .timeline()
       .to([textRef.current, imageRef.current], {
         duration: 0.8,
-        rotateY: 90,
+        rotateY: 60,
         opacity: 0,
         ease: "power2.in",
         onComplete: () => {

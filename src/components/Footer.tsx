@@ -27,7 +27,7 @@ const Footer = () => {
             <img src={Logo} alt="Lipad Logo" className="w-32 mx-auto sm:mx-0" />
           </div>
           <div className="space-y-4">
-            <p>Our Location</p>
+            <p className="font-bold">Our Location</p>
             <p>Kunde Rd</p>
             <p>Nairobi, Kenya</p>
             <p>info@lipad.io</p>

@@ -57,7 +57,11 @@ const FeatureSection = () => {
             </p>
           </div>
           <div className="p-6">
-            <img className="h-40 w-full object-cover" src={Feature} alt="" />
+            <img
+              className="h-40 w-full rounded-md object-cover"
+              src={Feature}
+              alt=""
+            />
           </div>
         </div>
       </div>
@@ -79,7 +83,7 @@ const FeatureSection = () => {
             </div>
             <div className="p-6 flex justify-center">
               <img
-                className="h-40 w-full object-cover"
+                className="h-40 w-full object-cover rounded-md"
                 src={feature.imageSrc}
                 alt={feature.title}
               />
