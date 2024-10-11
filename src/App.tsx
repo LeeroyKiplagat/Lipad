@@ -10,7 +10,7 @@ export default function App() {
   return (
     <div className="font-livvic ">
       <NavBar />
-      <div className="max-w-7xl mx-auto pt-72 px-2">
+      <div className="max-w-7xl mx-auto pt-24 md:pt-72 px-2">
         <HeroSection />
 
         <FeatureSection />
