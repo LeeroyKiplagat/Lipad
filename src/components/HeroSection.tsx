@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
-import { SlArrowRight } from "react-icons/sl";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 const HeroSection = () => {
   const [activeTab, setActiveTab] = useState("bank");
@@ -113,8 +113,8 @@ const HeroSection = () => {
         <div className=" flex-col space-y-4 pt-60">
           <button className="flex border bg-[#263470] p-4 space-x-4 rounded-full items-center font-bold text-white ">
             <p>Get Started</p>
-            <i>
-              <SlArrowRight />
+            <i className="">
+              <MdKeyboardArrowRight className="size-8" />
             </i>
           </button>
 
