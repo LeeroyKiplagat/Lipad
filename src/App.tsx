@@ -8,20 +8,21 @@ import VideoSection from "./components/VideoSection";
 
 export default function App() {
   return (
-    <div className="max-w-7xl mx-auto ">
+    <div className="">
       <NavBar />
-      <hr className="border-b border-gray-400" />
-      <HeroSection />
+      <div className="max-w-7xl mx-auto pt-72 ">
+        <HeroSection />
 
-      <FeatureSection />
+        <FeatureSection />
 
-      <VideoSection />
+        <VideoSection />
 
-      <Cta />
+        <Cta />
 
-      <Frame />
+        <Frame />
 
-      <Footer />
+        <Footer />
+      </div>
     </div>
   );
 }

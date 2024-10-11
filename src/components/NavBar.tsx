@@ -1,8 +1,8 @@
 import Logo from "../assets/logo.png";
 export default function NavBar() {
   return (
-    <div className="  md:h-[100px] w-full ">
-      <div className="flex justify-between items-center p-[15px]">
+    <div className="  md:h-[100px] w-screen border-b border-gray-400 fixed z-10 bg-white shadow-md ">
+      <div className="max-w-7xl mx-auto flex justify-between items-center p-[15px] ">
         <div>
           <img src={Logo} alt="" />
         </div>

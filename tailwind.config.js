@@ -25,5 +25,5 @@ export default {
       grayscale: ["hover", "focus"],
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
 };
