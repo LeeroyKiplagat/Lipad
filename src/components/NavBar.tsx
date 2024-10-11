@@ -1,12 +1,12 @@
 import Logo from "../assets/logo.png";
 export default function NavBar() {
   return (
-    <div className="  h-[100px] border-b-2 ">
+    <div className="  md:h-[100px] w-full ">
       <div className="flex justify-between items-center p-[15px]">
         <div>
           <img src={Logo} alt="" />
         </div>
-        <div>
+        <div className="hidden md:block">
           <ul className="flex gap-14">
             <li className="nav-text">Home</li>
             <li className="nav-text">Other Products</li>

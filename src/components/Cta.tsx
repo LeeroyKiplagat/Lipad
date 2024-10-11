@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
 
 const bankLogos = [
   { src: "/images/bank1.png", alt: "Coop Bank" },
@@ -9,37 +10,27 @@ const bankLogos = [
 ];
 
 const Cta = () => {
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const logoRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          const index = Number(entry.target.getAttribute("data-index"));
-          if (entry.isIntersecting) {
-            setActiveIndex(index);
-          }
-        });
-      },
-      {
-        root: null,
-        threshold: 0.5,
-      }
-    );
+    const logos = logoRefs.current;
 
-    logoRefs.current.forEach((logo) => {
-      if (logo) {
-        observer.observe(logo);
-      }
+    const tl = gsap.timeline({
+      repeat: -1,
+      defaults: { ease: "linear" },
+    });
+
+    tl.to(logos, {
+      xPercent: -100 * (logos.length / 2),
+      duration: 30,
+      ease: "none",
+      onRepeat: () => {
+        gsap.set(logos, { xPercent: 0 });
+      },
     });
 
     return () => {
-      logoRefs.current.forEach((logo) => {
-        if (logo) {
-          observer.unobserve(logo);
-        }
-      });
+      gsap.killTweensOf(logos);
     };
   }, []);
 
@@ -47,21 +38,18 @@ const Cta = () => {
     <div className="py-12 bg-gray-50">
       <h2 className="text-center text-3xl font-bold mb-6">Our partner banks</h2>
 
-      <div className="overflow-hidden">
-        <div className="flex space-x-8 w-[200%] animate-slide">
+      <div className="overflow-hidden relative">
+        <div className="flex space-x-8 w-[200%]">
           {bankLogos.concat(bankLogos).map((logo, index) => (
             <div
               key={index}
               className="flex-shrink-0"
-              data-index={index}
               ref={(el) => (logoRefs.current[index] = el)}
             >
               <img
                 src={logo.src}
                 alt={logo.alt}
-                className={`w-32 h-32 mx-auto transition-transform duration-500 ${
-                  activeIndex === index ? "grayscale-0" : "grayscale"
-                }`}
+                className="size-36 mx-auto transition-transform duration-500"
               />
             </div>
           ))}
