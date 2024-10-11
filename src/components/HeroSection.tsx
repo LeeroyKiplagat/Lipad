@@ -121,16 +121,18 @@ const HeroSection = () => {
           {/* Animated Dots */}
           <div className="flex items-center p-10">
             <div
-              className={`h-3 w-3 rounded-full ${
-                activeTab === "bank" ? "bg-[#263470] w-10" : "bg-gray-300"
+              className={`h-3  rounded-full ${
+                activeTab === "bank" ? "bg-[#263470] w-10" : "bg-gray-300 w-3"
               }`}
               style={{ transition: "background-color 0.3s" }}
             ></div>
             <div
-              className={`h-3 w-3 rounded-full ml-2 ${
-                activeTab === "merchant" ? "bg-[#263470] w-10" : "bg-gray-300"
+              className={`h-3  rounded-full ml-2 ${
+                activeTab === "merchant"
+                  ? "bg-[#263470] w-10"
+                  : "bg-gray-300 w-3"
               }`}
-              style={{ transition: "background-color 0.3s" }}
+              style={{ transition: "background-color 0.5s" }}
             ></div>
           </div>
         </div>
