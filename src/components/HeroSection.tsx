@@ -145,10 +145,10 @@ const HeroSection = () => {
           <img
             src="/images/hero_bank.png"
             alt="Bank Platform"
-            className="md:w-[481px] md:h-[559px] object-cover"
+            className="w-full h-full md:w-[481px] md:h-[559px] object-cover"
           />
         ) : (
-          <div className="relative flex justify-center items-center  bg-gray-100">
+          <div className="relative flex justify-center items-center  bg-gray-100 w-full h-full  md:w-[481px] md:h-[559px]">
             <div className="relative ">
               <img src={FrameSVG} alt="" />
             </div>
