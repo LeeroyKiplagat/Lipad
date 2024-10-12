@@ -13,16 +13,9 @@ import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    sector: "",
-    email: "",
-    message: "",
-  });
-
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    console.log("Form data:", formData);
+    console.log("Form data:");
     // Add your form submission logic here (e.g., API call)
   };
 
