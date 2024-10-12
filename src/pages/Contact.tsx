@@ -20,7 +20,7 @@ const Contact = () => {
 
   return (
     <div className="bg-white p-6 md:p-10 lg:p-12 lg:w-1/2 my-10">
-      <h2 className="uppercase font-semibold bg-gradient-to-r from-[#363f66] to-[#25a759]  bg-clip-text text-transparent">
+      <h2 className="uppercase font-semibold bg-gradient-to-r from-[#363f66] to-[#25a759]  bg-clip-text text-transparent w-28">
         Contact Us
       </h2>
       <h2 className="text-2xl font-bold mb-6">Get Started</h2>
