@@ -140,15 +140,15 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div ref={imageRef} className="mt-8 md:pl-56">
+      <div ref={imageRef} className="mt-8 md:pl-56 h-[400px] md:h-[600px]">
         {activeTab === "bank" ? (
           <img
             src="/images/hero_bank.png"
             alt="Bank Platform"
-            className="relative w-full h-full md:w-[481px] md:h-[559px] object-cover"
+            className="md:w-[481px] md:h-[559px] object-cover"
           />
         ) : (
-          <div className="relative flex justify-center items-center  bg-gray-100 w-full h-full  md:w-[481px] md:h-[559px]">
+          <div className="relative flex justify-center items-center  bg-gray-100 md:w-[481px] md:h-[559px]">
             <div className="relative ">
               <img src={FrameSVG} alt="" />
             </div>

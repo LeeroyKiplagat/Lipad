@@ -29,7 +29,7 @@ const features = [
 
 const FeatureSection = () => {
   return (
-    <div className="py-12 bg-gray-50 pt-12 md:pt-2">
+    <div className="py-12  pt-12 md:pt-2">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="bg-white border-4 text-[#1F2544] text-sm font-bold inline-block py-1 px-3 rounded-full mb-3">
           Feature
@@ -43,7 +43,7 @@ const FeatureSection = () => {
         </p>
       </div>
       <div className="mt-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-4">
-        <div className="flex flex-col lg:flex-row bg-white rounded-lg shadow-lg hover:bg-gray-200 overflow-hidden">
+        <div className="flex flex-col lg:flex-row  bg-gray-50 rounded-lg shadow-lg hover:bg-gray-200 overflow-hidden">
           <div className="flex-1 p-6">
             <div className="flex-row space-y-4 items-center mb-4">
               <div className="h-8 w-8 bg-[#21C463] rounded-full mr-4"></div>
@@ -70,7 +70,7 @@ const FeatureSection = () => {
         {features.map((feature, index) => (
           <div
             key={index}
-            className="flex-row bg-white rounded-lg shadow-lg overflow-hidden hover:bg-gray-200 hover:cursor-pointer "
+            className="flex-row bg-gray-50 rounded-lg shadow-lg overflow-hidden hover:bg-gray-200 hover:cursor-pointer "
           >
             <div className="p-6">
               <div className="flex-row space-y-4 items-center mb-4">
