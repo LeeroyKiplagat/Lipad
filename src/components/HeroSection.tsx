@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { MdKeyboardArrowRight } from "react-icons/md";
-import PersonSVG from "../assets/person.svg"; // Replace with correct path
-import FrameSVG from "../assets/frame.svg";
+import PersonSVG from "../assets/person.png"; // Replace with correct path
+import FrameSVG from "../assets/frame.png";
 
 const HeroSection = () => {
   const [activeTab, setActiveTab] = useState("bank");
@@ -143,7 +143,7 @@ const HeroSection = () => {
       <div ref={imageRef} className="mt-8 md:pl-56">
         {activeTab === "bank" ? (
           <img
-            src="/images/hero_bank.svg"
+            src="/images/hero_bank.png"
             alt="Bank Platform"
             className="md:w-[481px] md:h-[559px] object-cover"
           />
