@@ -14,7 +14,7 @@ const HeroSection = () => {
     gsap
       .timeline()
       .to([textRef.current, imageRef.current], {
-        duration: 1.0,
+        duration: 0.5,
         rotateY: 90,
         opacity: 0,
         ease: "power2.in",
@@ -23,7 +23,7 @@ const HeroSection = () => {
         },
       })
       .to([textRef.current, imageRef.current], {
-        duration: 1.0,
+        duration: 0.5,
         rotateY: 0,
         opacity: 1,
         ease: "power2.out",
@@ -149,11 +149,11 @@ const HeroSection = () => {
           />
         ) : (
           <div className="relative flex justify-center items-center  bg-gray-100">
-            <div className="relative z-10" id="frame">
+            <div className="relative ">
               <img src={FrameSVG} alt="" />
             </div>
-            <div className="absolute  z-20">
-              <img src={PersonSVG} id="person" alt="" />
+            <div className="absolute  z-5">
+              <img src={PersonSVG} alt="" />
             </div>
           </div>
         )}
