@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/Logo.svg";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -59,7 +59,7 @@ export default function NavBar() {
       <div className="max-w-7xl mx-auto flex justify-between items-center p-2 md:p-[15px] ">
         <div>
           <Link to="/">
-            <img src={Logo} alt="" />
+            <img src={Logo} alt="" className="" />
           </Link>
         </div>
         <div className="hidden md:block">
@@ -84,7 +84,7 @@ export default function NavBar() {
                   <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                     {components.map((component) => (
                       <NavLink key={component.title} to={component.href}>
-                        <div className="hover:bg-gray-100 p-2 rounded-md">
+                        <div className="hover:bg-gray-200 p-2 rounded-md">
                           <h1 className="text-lg font-bold">
                             {component.title}
                           </h1>

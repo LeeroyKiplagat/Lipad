@@ -35,11 +35,16 @@ export default {
             height: "0",
           },
         },
+        popOut: {
+          "0%": { transform: "scale(0.5)", opacity: "0" },
+          "100%": { transform: "scale(1)", opacity: "1" },
+        },
       },
       animation: {
         slide: "slide 15s linear infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "pop-out": "popOut 0.75s ease-out",
       },
       fontFamily: {
         livvic: ["Livvic"],
