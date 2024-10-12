@@ -14,7 +14,7 @@ const HeroSection = () => {
     gsap
       .timeline()
       .to([textRef.current, imageRef.current], {
-        duration: 0.8,
+        duration: 1.0,
         rotateY: 90,
         opacity: 0,
         ease: "power2.in",
@@ -23,7 +23,7 @@ const HeroSection = () => {
         },
       })
       .to([textRef.current, imageRef.current], {
-        duration: 0.8,
+        duration: 1.0,
         rotateY: 0,
         opacity: 1,
         ease: "power2.out",
