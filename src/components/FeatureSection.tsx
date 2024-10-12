@@ -75,7 +75,7 @@ const FeatureSection = () => {
             <div className="p-6">
               <div className="flex items-center mb-4">
                 <div className="h-8 w-8 bg-[#21C463] rounded-full mr-4"></div>
-                <h3 className="text-lg font-bold text-gray-900">
+                <h3 className="text-lg font-bold text-gray-900 max-w-64">
                   {feature.title}
                 </h3>
               </div>

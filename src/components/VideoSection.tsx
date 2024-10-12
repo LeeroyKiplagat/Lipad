@@ -14,12 +14,10 @@ const VideoSection = () => {
       <div className="md:w-1/2 flex justify-center">
         <div className="w-full max-w-lg h-64 bg-gray-200 rounded-lg relative">
           <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"
             className="w-full h-full rounded-lg"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            title="YouTube video"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
           ></iframe>
 
           <div className="absolute inset-0 flex items-center justify-center">

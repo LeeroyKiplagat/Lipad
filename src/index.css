@@ -9,3 +9,10 @@
     @apply font-bold text-lg hover:text-buttonColor hover:cursor-pointer;
   }
 }
+
+@layer base {
+  :root {
+
+    --radius: 0.5rem
+  }
+}
