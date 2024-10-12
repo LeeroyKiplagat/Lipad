@@ -153,12 +153,7 @@ const HeroSection = () => {
               <img src={FrameSVG} alt="" />
             </div>
             <div className="absolute  z-20">
-              <img
-                src={PersonSVG}
-                id="person"
-                alt=""
-                className="w-full h-full"
-              />
+              <img src={PersonSVG} id="person" alt="" />
             </div>
           </div>
         )}
