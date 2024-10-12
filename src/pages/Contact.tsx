@@ -40,7 +40,7 @@ const Contact = () => {
             </SelectTrigger>
             <SelectContent>
               <SelectGroup id="sector">
-                <SelectLabel>Select a business type!</SelectLabel>
+                <SelectLabel>Select a business type</SelectLabel>
                 <SelectItem value="health">Healthcare</SelectItem>
                 <SelectItem value="edu">Education</SelectItem>
                 <SelectItem value="hosp">Hospitality</SelectItem>
