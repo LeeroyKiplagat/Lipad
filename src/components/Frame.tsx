@@ -1,4 +1,3 @@
-import { SlArrowDown } from "react-icons/sl";
 import {
   Accordion,
   AccordionContent,
