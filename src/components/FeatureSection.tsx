@@ -42,10 +42,10 @@ const FeatureSection = () => {
           experience.
         </p>
       </div>
-      <div className="mt-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="mt-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-4">
         <div className="flex flex-col lg:flex-row bg-white rounded-lg shadow-lg hover:bg-gray-200 overflow-hidden">
           <div className="flex-1 p-6">
-            <div className="flex items-center mb-4">
+            <div className="flex-row space-y-4 items-center mb-4">
               <div className="h-8 w-8 bg-[#21C463] rounded-full mr-4"></div>
               <h3 className="text-lg font-bold text-gray-900">
                 Petty Cash Efficiency, Simplified
@@ -66,24 +66,24 @@ const FeatureSection = () => {
         </div>
       </div>
 
-      <div className="mt-10 max-w-7xl mx-auto grid grid-cols-1 gap-y-10 gap-x-8 sm:grid-cols-2">
+      <div className="mt-10 max-w-7xl mx-auto grid grid-cols-1 gap-y-10 gap-x-8 sm:grid-cols-2 px-4">
         {features.map((feature, index) => (
           <div
             key={index}
-            className="flex flex-col bg-white rounded-lg shadow-lg overflow-hidden hover:bg-gray-200 hover:cursor-pointer"
+            className="flex-row bg-white rounded-lg shadow-lg overflow-hidden hover:bg-gray-200 hover:cursor-pointer "
           >
             <div className="p-6">
-              <div className="flex items-center mb-4">
+              <div className="flex-row space-y-4 items-center mb-4">
                 <div className="h-8 w-8 bg-[#21C463] rounded-full mr-4"></div>
-                <h3 className="text-lg font-bold text-gray-900 max-w-64">
+                <h3 className="text-lg font-bold text-gray-900 max-w-72">
                   {feature.title}
                 </h3>
               </div>
-              <p className="text-gray-600">{feature.description}</p>
+              <p className="text-gray-600 w-96">{feature.description}</p>
             </div>
             <div className="p-6 flex justify-center">
               <img
-                className="h-40 w-full object-cover rounded-md"
+                className="h-64 w-full object-cover rounded-md"
                 src={feature.imageSrc}
                 alt={feature.title}
               />

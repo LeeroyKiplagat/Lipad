@@ -111,7 +111,7 @@ const HeroSection = () => {
           )}
         </div>
         <div className=" flex-col space-y-4 pt-60">
-          <button className="flex border bg-[#263470] p-4 space-x-4 rounded-full items-center font-bold text-white ">
+          <button className="flex border bg-[#263470] p-4 space-x-4 justify-center rounded-full items-center font-bold text-white ">
             <p>Get Started</p>
             <i className="">
               <MdKeyboardArrowRight className="size-8" />
