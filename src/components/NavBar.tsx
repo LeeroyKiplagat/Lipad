@@ -113,9 +113,9 @@ export default function NavBar() {
         </div>
         <div className="hidden md:block">
           <div className="flex gap-[15px]">
-            <Button className=" border border-gray-900 p-2 rounded-full nav-text text-sm">
+            <button className=" border border-gray-900 p-2 rounded-full font-semibold text-sm md:w-20">
               Login
-            </Button>
+            </button>
             <Button className=" border border-gray-900 p-2 rounded-full font-semibold text-sm bg-[#1F2544] text-white">
               Get's Started
             </Button>

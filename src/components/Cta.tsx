@@ -2,8 +2,8 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
 const bankLogos = [
-  { src: "/images/bank1.png", alt: "Coop Bank" },
-  { src: "/images/bank2.png", alt: "Stanbic Bank" },
+  { src: "/images/coop.svg", alt: "Coop Bank" },
+  { src: "/images/stanbi", alt: "Stanbic Bank" },
   { src: "/images/bank3.png", alt: "Absa Bank" },
   { src: "/images/bank4.png", alt: "KCB Bank" },
   { src: "/images/bank5.png", alt: "I&M Bank" },
