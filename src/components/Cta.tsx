@@ -3,10 +3,10 @@ import gsap from "gsap";
 
 const bankLogos = [
   { src: "/images/coop.svg", alt: "Coop Bank" },
-  { src: "/images/stanbi", alt: "Stanbic Bank" },
-  { src: "/images/bank3.png", alt: "Absa Bank" },
-  { src: "/images/bank4.png", alt: "KCB Bank" },
-  { src: "/images/bank5.png", alt: "I&M Bank" },
+  { src: "/images/stanbic.svg", alt: "Stanbic Bank" },
+  { src: "/images/absa.svg", alt: "Absa Bank" },
+  { src: "/images/kcb.svg", alt: "KCB Bank" },
+  { src: "/images/i&m.svg", alt: "I&M Bank" },
 ];
 
 const Cta = () => {
@@ -49,7 +49,7 @@ const Cta = () => {
               <img
                 src={logo.src}
                 alt={logo.alt}
-                className="size-20 md:size-32 transition-transform duration-500"
+                className="size-20 md:size-32 transition-transform duration-500  bg-gray-50"
               />
             </div>
           ))}
